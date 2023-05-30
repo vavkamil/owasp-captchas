@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Solving CAPTCHAs for Fun</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      /* https://hail2u.github.io/mn/ */
+      body {
+        font-family: "Share Tech Mono";
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Share Tech Mono";
+        font-weight: normal;
+        text-shadow: 0 0 20px #20ee83;
+      }
+      .remark-container {
+        background-color: #262626;
+      }
+      .remark-code,
+      .remark-inline-code {
+        font-family: "Ubuntu Mono";
+      }
+      .remark-slide-scaler {
+        box-shadow: 0 0 30px #20ee83;
+      }
+      /* Dark theme class for slide pages */
+      .dark {
+        background: #000000;
+        /*        color: #c2bcbc;*/
+        /*color: #20ee83;*/
+        color: #39ff14;
+        /*font-family: 'Share Tech Mono', monospace;*/
+
+        text-shadow: 2px 2px 10px #20ee83;
+      }
+      .dark h1 {
+        text-align: center;
+        /*        color: #f3f2f2;*/
+        line-height: 0.8em;
+      }
+      .dark h2 {
+        /*        color: #e7e4e4;*/
+        line-height: 0.8em;
+      }
+      .dark a {
+        color: #20ee83;
+        text-shadow: 0 0 5px #20ee83;
+        text-decoration: none;
+        font-style: italic;
+      }
+      .dark code {
+        color: #ffffff;
+      }
+      /* Two-column layout */
+      .left-column {
+        width: 50%;
+        height: 92%;
+        float: left;
+      }
+      .left-column h2:last-of-type,
+      .left-column h3:last-child {
+        color: #ffffff;
+      }
+      .right-column {
+        width: 50%;
+        float: right;
+      }
+      /* Footer */
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+        right: 10em;
+        font-size: 12px;
+        color: #df2080;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: dark-center
+layout: true
+class: center, middle, dark
+---
+name: dark-left
+layout: true
+class: left, dark
+---
+template: dark-center
+
+# Solving CAPTCHAs for Fun
+
+_by @vavkamil_
+
+.footnote[OWASP Czech Chapter Meeting | Jun 22, 2023]
+
+???
+
+## TODO
+
+---
+## ~$ whoami
+
+- Kamil Vavra (@vavkamil)
+
+.left-column[
+
+- Application Security Engineer @ Printify
+
+- Burp Suite Certified Practitioner
+
+- Offensive Web Application Security
+
+- OWASP Czech Chapter Leader
+
+- Moderator of reddit.com/r/bugbounty
+]
+
+.right-column[
+- [vavkamil.cz](https://vavkamil.cz)
+
+- [github.com/vavkamil](https://github.com/vavkamil/)
+
+- [twitter.com/vavkamil](https://twitter.com/vavkamil)
+
+- [linkedin.com/in/vavkamil](https://www.linkedin.com/in/vavkamil/)
+
+- [reddit.com/user/_vavkamil_](https://www.reddit.com/user/_vavkamil_)
+
+]
+---
+# ~$ Agenda
+
+.left-column[
+- TODO
+    - TODO
+]
+--
+.right-column[
+- TODO
+    - TODO
+]
+
+---
+## ~$ Wtf is CAPTCHA
+
+- **C**ompletely
+- **A**utomated
+- **P**ublic
+- **T**uring test to tell
+- **C**omputers and
+- **H**umans
+- **A**part
+
+
+- The term was coined in 2003
+  - by **Luis von Ahn**, Manuel Blum, Nicholas J. Hopper, and John Langford
+  - Read the whitepaper [CAPTCHA: Using Hard AI Problems for Security](https://link.springer.com/content/pdf/10.1007/3-540-39200-9_18.pdf)   
+      - _Abstract. We introduce captcha, an automated test that humans can pass, but current computer programs can’t pass: any program that has high success over a captcha can be used to solve an unsolved Artificial Intelligence (AI) problem._
+
+- Luis von Ahn later founded reCAPTCHA in 2007, which was acquired by Google in 2009
+
+???
+
+- TODO
+
+___
+TODO
+
+---
+template: dark-center
+
+## THANK YOU !
+
+### Any questions ?
+
+    </textarea>
+    <!-- <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script> -->
+    <script src="./remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create({
+        ratio: "16:9",
+        highlightStyle: 'monokai',
+        highlightLines: true,
+        navigation: {
+          click: false,
+        },
+      });
+    </script>
+  </body>
+</html>
