@@ -113,7 +113,7 @@ _by @vavkamil_
 
 .left-column[
 
-- Application Security Engineer @ Printify
+- Application Security Engineer
 
 - Burp Suite Certified Practitioner
 
@@ -157,9 +157,9 @@ _by @vavkamil_
 --
 .right-column[
 - How to bypass CAPTCHAs
-    - Top CAPTCHA solving vendors
+    - Top CAPTCHA-solving vendors
 
-- Using ChatGPT to automate the process
+- Using AI to automate the process
 
 <center>
 <img src="./img/Captcha-780x470.jpg.webp" width="75%">
@@ -267,13 +267,13 @@ template: dark-center
 ---
 ## ~$ (re)CAPTCHA origins
 
-- In a September 2000 chief scientist of the Internet portal Yahoo, Dr. Udi Manber, [conference call](https://web.archive.org/web/20090606234213/https://www.nytimes.com/2002/12/10/science/human-or-computer-take-this-test.html?sec=technology) with group of computer science researchers at Carnegie Mellon University
-  - Yahoo had a problem with constant spam in they chat rooms and automated registrations of Yahoo e-mail accounts used for spam
+- In a September 2000 chief scientist of the Internet portal Yahoo, Dr. Udi Manber, [conference call](https://web.archive.org/web/20090606234213/https://www.nytimes.com/2002/12/10/science/human-or-computer-take-this-test.html?sec=technology) with a group of computer science researchers at Carnegie Mellon University
+  - Yahoo had a problem with constant spam in their chat rooms and automated registrations of Yahoo e-mail accounts used for spam
 
-- Dr. Manuel Blum, a professor Carnegie Mellon proposed a solution: _"Why not devise a new sort of Turing test, that would be simple for humans but would baffle sophisticated computer programs."_
+- Dr. Manuel Blum, a professor at Carnegie Mellon proposed a solution: _"Why not devise a new sort of Turing test, that would be simple for humans but would baffle sophisticated computer programs."_
   - He started working on it with his Ph.D. student **Luis von Ahn** (22-year-old) and others.
 
-- They registered [captcha.net](http://www.captcha.net/) domain in 2001
+- They registered the [captcha.net](http://www.captcha.net/) domain in 2001
 
 - As a Proof of Concept, they designed two CAPTCHA proposals
   - Gimpy
@@ -290,10 +290,10 @@ template: dark-center
 .left-column[
 #### Gimpy (text-based)
 
-- It's based on the human ability to read extremely distorted and corrupted text, and the inability of current computer programs to do the same
+- It's based on the human ability to read an extremely distorted and corrupted text, and the inability of current computer programs to do the same
 
-- Gimpy works by choosing a certain number of words from a dictionary, and then displaying them distorted in an image;
-  - after that Gimpy asks the user to type the words displayed in that image.
+- Gimpy works by choosing a certain number of words from a dictionary and then displaying them distorted in an image;
+  - Afterward, Gimpy asks the user to type the words displayed in that image.
 ]
 
 .right-column[
@@ -303,7 +303,7 @@ template: dark-center
 
 - Bongo displays two series of blocks, and the user must find the characteristic that sets the two series apart.
 
-- After seeing the two series of blocks, the user is presented with four single blocks and is asked to determine whether each block belongs to the right series or to the left
+- After seeing the two series of blocks, the user is presented with four single blocks and is asked to determine whether each block belongs to the right series or the left
 ]
 
 ???
@@ -311,7 +311,7 @@ template: dark-center
 ## Speaker notes
 
 - TODO
-- Gimpy was their most reliable system. It was originally built for (and in collaboration with) Yahoo!
+- Gimpy was their most reliable system. It was initially built for (and in collaboration with) Yahoo!
 
 ---
 ## ~$ (re)CAPTCHA origins
@@ -344,7 +344,7 @@ template: dark-center
 
 - 2001 - First PoC of CAPTCHA
 
-- 2003 - CAPTCHA white-paper released
+- 2003 - CAPTCHA white paper released
 
 - 2007 - reCAPTCHA company started
 
@@ -419,7 +419,7 @@ template: dark-center
 ---
 ## ~$ CAPTCHA vendors | reCaptcha
 
-- Text-based version used to completely digitize the archives of The New York Times and books from Google Books
+- The text-based version used to completely digitize the archives of The New York Times and books from Google Books
 
 - It helped to digitize books illegible to be scanned by computers, as well as translate books to different languages
 
@@ -427,9 +427,9 @@ template: dark-center
 
   - Within the first year, 440 million words were deciphered; the equivalent of 17,600 books
 
-  - More than 13 million articles in total have been (from NYT; dating from 1851 to the present day
+  - More than 13 million articles in total have been published (from NYT; dating from 1851 to the present day
 
-- Since 2012, they started adding street addresses, street names, house numbers and even traffic signs
+- Since 2012, they started adding street addresses, street names, house numbers, and even traffic signs
   - Data from Google Maps 
 
 <center>
@@ -444,7 +444,7 @@ template: dark-center
 ---
 ## ~$ CAPTCHA vendors | reCaptcha
 
-- Nowdays, Google is using reCaptcha to identify objects in images, like buses, crosswalks, fire hydrants, and so on.
+- Nowadays, Google uses reCaptcha to identify objects in images, like buses, crosswalks, fire hydrants, etc.
 
   - Google uses user inputs to improve its machine learning models, and specifically, its image recognition models
 
@@ -485,12 +485,12 @@ template: dark-center
 ## ~$ CAPTCHA vendors | hCaptcha
 
 - hCaptcha was introduced in 2018 by Intuition Machines, Inc.
-  - a company that provides AI and machine learning solutions
+  - A company that provides AI and machine learning solutions
 
 - hCaptcha is designed to solve problems for machine learning models
-  - While Google is using reCAPTCHA to help train its own services, hCaptcha's main business model is to sell the anonymized human-validated data to companies interested in improving their machine learning models
+  - While Google is using reCAPTCHA to help train its own services, hCaptcha's primary goal is to sell the anonymized human-validated data to companies interested in improving their machine-learning models
 
-- One of the key differences between hCaptcha and reCAPTCHA is in their approach to privacy
+- One of the key differences between hCaptcha and reCAPTCHA is in their approach to privacy and transparency
 
 .left-column[
 <center>
@@ -513,12 +513,12 @@ template: dark-center
 
 - Introduced in 2022 by Cloudflare
   - Invisible alternative to CAPTCHA
-  - Key difference is to solve terrible user experience
+  - A key difference is to solve terrible user experience
 
 - It automatically chooses from a rotating suite of non-intrusive browser challenges based on telemetry and client behavior exhibited during a session.
 
-- First it runs a series of small non-interactive JavaScript challenges gathering more signals about the visitor/browser environment
-  - Those challenges include proof-of-work, proof-of-space, probing for web APIs, and various other challenges
+- First, it runs a series of small non-interactive JavaScript challenges gathering more signals about the visitor/browser environment
+  - Those challenges include proof-of-work, proof of space, probing for web APIs, and various other challenges
 
 - Turnstile also includes machine learning models that detect common features of end visitors who were able to pass a challenge before.
   - The computational hardness of those initial challenges may vary by visitor, but is targeted to run fast
@@ -533,7 +533,7 @@ template: dark-center
 
 #### reCAPTCHA (Google)
   - Free up to 1 million assessments per month (then it stop working)
-  - Enterprise free up tp 1m, then $1 per 1,000 calls
+  - Enterprise free up to 1m, then $1 per 1,000 calls
 
 #### hCaptcha (Intuition Machines)
   - Free up to one million requests per month
@@ -579,13 +579,22 @@ template: dark-center
     - Founded in 2007; same as reCAPTCHA
 
     - Price ~$0.95 - $2 for 1000 reCAPTCHAs V2
-    - Solving speed for reCAPTCHA V2  ~5 sec
+    - Solving speed for reCAPTCHA V2  ~5 sec.
 
 <center>
   <img src="./img/price_anticaptcha.png" width="90%">
 </center>
 ]
 
+
+???
+
+## Speaker notes
+
+- TODO
+---
+template: dark-center
+# ~$ anti-captcha.com
 
 ???
 
@@ -716,18 +725,29 @@ done
 
 - TODO
 ---
+template: dark-center
+# ~$ kolotibablo.com
+
+## Work for anti-captcha.com
+
+???
+
+## Speaker notes
+
+- TODO
+---
 ## ~$ kolotibablo.com
 
 - Founded in 2007 (same as reCAPTCHA) | Work for anti-captcha.com
   - They used to pay 0.5 cents per correctly entered captcha (earnings ~$3 per hour)
 
 - Now you get $1 per 1000 CAPTCHAs solved (earning ~$2 per day)
-  - Bonus system based on monthly volume of solves (e.g. + 15% for 50k solves)
+  - Bonus system based on monthly volume of solves (e.g., + 15% for 50k solves)
     - Estimated earnings ~$100 per month, working every day
 
-- You earn RP (recaptcha points) for each sucesfull solve
+- You earn RP (recaptcha points) for each successful solve
   - If you do 3+ mistakes per 1k solves, you get banned
-  - You can unban yourself or friend by spending 2k RP
+  - You can unban yourself or a friend by spending 2k RP
 
 - Top 3 countries (workers):
   - Venezuela
@@ -907,6 +927,8 @@ template: dark-center
 ### Any questions ?
 
 [github.com/vavkamil/owasp-captchas](https://github.com/vavkamil/owasp-captchas)
+
+.footnote[OWASP Czech Chapter Meeting | Jun 22, 2023]
 
     </textarea>
     <!-- <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script> -->
