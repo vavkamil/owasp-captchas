@@ -14,7 +14,7 @@ https://www.eventbrite.com/e/owasp-czech-chapter-meeting-registration-6420063873
 
 ## GitHub pages
 
-- TODO
+- [vavkamil.github.io/owasp-captchas](https://vavkamil.github.io/owasp-captchas/)
 
 ## Software
 
